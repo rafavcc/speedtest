@@ -1,3 +1,6 @@
+# The ANATEL database can be obtained in the MOSAICO platform:
+# https://sistemas.anatel.gov.br/se/public/view/b/licenciamento
+
 # Now let's import the other dataset used in this work: The ANATEL database of
 # Antennas
 antennas <- read_csv(file ="csv/csv_licenciamento.csv", col_names = TRUE, col_types = cols(.default = "c") , locale = locale(encoding = "ISO-8859-1"))

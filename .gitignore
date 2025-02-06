@@ -1,10 +1,21 @@
+.DS_Store
+antennas_sp.kml
+Extra_Commands.R
+BR_UF_2021
+BR_Municipios_2023
+SP_Municipios_2023
+csv
+2024-10-01_performance_mobile_tiles
+
 # History files
 .Rhistory
 .Rapp.history
 
 # Session Data files
-.RData
+.RData:
 .RDataTmp
+.R
+.Rproj
 
 # User-specific files
 .Ruserdata
