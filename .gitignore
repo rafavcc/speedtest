@@ -14,6 +14,7 @@ csv
 .Rapp.history
 
 # Session Data files
+*.RData
 .RData
 .RData:
 .RDataTmp

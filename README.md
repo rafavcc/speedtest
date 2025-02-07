@@ -10,6 +10,7 @@ To reproduce this analysis, follow the execution order of the scripts:
 2. **`Importing_Tiles_Ookla.R`** - Loads and processes tile-based internet speed test data and other features.
 3. **`Importing_Sites_Anatel.R`** - Incorporates network site data from Anatel Database for comparison.
 4. **`Analyzing_Data.R`** - Conducts statistical analysis and visualizations
+5. **`Visual_Analysis.R`** - Provides charts and graphical information about the data used in this project.
 
 ## **Key Decisions and Methodology**
 - Used **ggplot2** and **sf** for spatial visualizations
