@@ -23,8 +23,7 @@ ggplot(tiles_sp, aes(x = tests, y = avg_d_kbps)) +
 # GGPLOT + GEOM_SF (Simple Feature) = Average Download Speeds Across São Paulo
 # using Viridis
 ggplot() + 
-  geom_sf(data = shp_sp, fill = "gray", color = "black", linewidth = 0.7) +  
-  geom_sf(data = tiles_sp, aes(fill = avg_d_kbps), color = NA) + 
+  geom_sf(data = shp_sp, fill = "gray", color = "black", linewidth = 0.7) +   geom_sf(data = tiles_sp, aes(fill = avg_d_kbps), color = NA) + 
   scale_x_continuous(labels = scales::label_number()) +  
   scale_y_continuous(labels = scales::label_number()) +
   scale_fill_viridis_c(option = "C", name = "Avg DL Rate (kbps)") +
