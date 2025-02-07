@@ -1,7 +1,10 @@
 # Let's check the content and some stats of the tiles imported
 summary (tiles_sp)
 # Create temporary variable to check Chart Correlation
-tiles_sp_numeric = tiles_sp%>% select(avg_d_kbps, avg_u_kbps, tests, devices) %>% st_drop_geometry()
+tiles_sp_numeric = 
+  tiles_sp%>% 
+  select(avg_d_kbps, avg_u_kbps, avg_lat_ms, tests, devices) %>% 
+  st_drop_geometry()
 chart.Correlation(tiles_sp_numeric, histogram = TRUE, pch = 19)
 
 # From the histogram, we see that :

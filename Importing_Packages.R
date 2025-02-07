@@ -5,6 +5,6 @@ pacotes <- c("raster","tmap","tidyverse","broom","knitr",
              "showtext", "dplyr", "DescTools", "PerformanceAnalytics", "psych",
              "pracma","nlme", "jtools", "cowplot","nlme","lmtest","fastDummies",
              "msm","lmeInfo","jtools", "car","reshape2", "beepr","ggplot2",
-             "dplyr", "sf", "dplyr", "PerformanceAnalytics", "beepr" )
+             "dplyr", "sf", "dplyr", "PerformanceAnalytics", "beepr", "yardstick")
 install.packages(pacotes)
 lapply(pacotes, library, character.only = TRUE)

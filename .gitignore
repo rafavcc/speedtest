@@ -1,4 +1,6 @@
 .DS_Store
+.vs_code
+.vs_code/
 antennas_sp.kml
 Extra_Commands.R
 BR_UF_2021
@@ -12,6 +14,7 @@ csv
 .Rapp.history
 
 # Session Data files
+.RData
 .RData:
 .RDataTmp
 .R

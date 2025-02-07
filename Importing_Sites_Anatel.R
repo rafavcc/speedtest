@@ -54,7 +54,7 @@ antennas_sp %>% ggplot() + geom_sf() +
   scale_x_continuous(labels = scales::label_number()) + 
   scale_y_continuous(labels = scales::label_number()) 
 
-#  We should remove them.
+# Let's should remove them.
 antennas_sp <- antennas_sp %>% filter(st_coordinates(geometry)[,2] > -24)
 antennas_sp <- antennas_sp %>% filter(st_coordinates(geometry)[,1] > -47)
 
@@ -73,5 +73,3 @@ ggplot() +
   )
 
 # Done!
-# 
-st_write(antennas_sp, "antennas_sp.kml", driver = "KML")
