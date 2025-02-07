@@ -47,6 +47,17 @@ This scatter plot investigates the relationship between download speed and the n
 
 ![Download Speed vs Tests](./images/Download%20Speed%20vs%20Number%20of%20Tests.png)
 
+
+## Attempt to Model Download Speeds Using Linear Regression
+
+One of the objectives of this analysis was to explore whether the number of mobile network sites (2G, 3G, 4G, and 5G) from the Anatel database could effectively predict average download speeds across São Paulo. To investigate this, **a linear regression model** was attempted, with the number of sites as independent variables and avg_d_kbps as the dependent variable.
+
+The results indicated that network site density alone is not a strong predictor of download speeds. **The R² value was very low**, meaning the model explained little of the variance in download speeds. Additionally, the RMSE (Root Mean Square Error) was very high, suggesting that the model’s predictions deviated significantly from actual values.
+
+This suggests that other factors — such as **network congestion, spectrum availability, user density, and infrastructure** quality — play a significant role in determining download speeds. Future analysis could incorporate more variables, such as **population density, signal strength, or fiber backbone presence**, to build a more robust predictive model.
+
+![Actual vs Predicted Download Speeds](./images/Tests_vs_Download_Speed.png)
+
 ## **Conclusion and Insights**
 - The distribution of download speeds is **right-skewed**, with a concentration of lower speeds.
 - There are **outliers** with significantly higher speeds, as seen in the boxplot.
